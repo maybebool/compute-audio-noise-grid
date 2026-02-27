@@ -2,7 +2,7 @@
 
 A GPU-driven audio visualizer built in Unity that generates a dynamic grid of cubes whose height responds to real-time audio spectrum data. The geometry is entirely computed on the GPU using a compute shader with Perlin noise modulation.
 
-> 🎥 **Tutorial**: [Watch on YouTube](https://youtu.be/Mo5PHCmPs7g)
+> 🎥 **Tutorial**: [Watch on YouTube](https://www.youtube.com/watch?v=_bxBC56Zx2o) (german)
 
 ## How It Works
 
