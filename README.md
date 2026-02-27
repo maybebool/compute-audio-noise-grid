@@ -52,17 +52,6 @@ $$\text{stride} = \text{sizeof}(\texttt{float3}) \times 2 = 24 \ \text{bytes}$$
 
 storing position and normal per vertex.
 
-### Pipeline Overview
-
-```
-AudioSource ──► FFT (512 samples) ──► 8 Frequency Bands ──► Decay Buffer ──► Normalized Amplitude
-                                                                                      │
-                                                                                      ▼
-                                                              Compute Shader (GPU) ◄───┘
-                                                                      │
-                                                                      ▼
-                                                              W×L Cube Grid Mesh
-```
 
 ## Parameters
 
@@ -76,9 +65,9 @@ AudioSource ──► FFT (512 samples) ──► 8 Frequency Bands ──► De
 
 ## Tech Stack
 
-- **Unity** — Engine and audio pipeline
-- **HLSL Compute Shader** — GPU-side cube generation with Perlin noise
-- **C#** — Audio FFT analysis, buffer smoothing, and CPU-GPU bridge
+- **Unity**  Engine and audio pipeline
+- **HLSL Compute Shader**  GPU-side cube generation with Perlin noise
+- **C#**  Audio FFT analysis, buffer smoothing, and CPU-GPU bridge
 
 
 
